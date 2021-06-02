@@ -2,7 +2,7 @@ import './style.scss';
 
 function Home() {
   return (
-    <section className="home">
+    <section className="home wrapper">
       <div className="home-title">
         <h1 className="home-title_h title-name">
           <span>Benjamin</span>

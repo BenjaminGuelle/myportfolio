@@ -4,6 +4,7 @@ import './style.scss';
 
 import Home from '../Home';
 import Nav from '../Nav';
+import Portfolio from '../Portfolio';
 
 
 function App() {
@@ -17,8 +18,11 @@ function App() {
       </div>
       <div className="copyright">2021 &copy; BG</div>
       <Nav />
-      <Route path="/">
+      <Route exact path="/">
         <Home />
+      </Route>
+      <Route exact path="/portfolio">
+        <Portfolio />
       </Route>
     </div>
   );
