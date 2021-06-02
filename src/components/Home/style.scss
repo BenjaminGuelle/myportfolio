@@ -1,8 +1,35 @@
 @import '../../styles/index.scss';
 
-.hero {
+.home {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 20;
+    width: 60%;
+    height: 100%;
+    background-color: $backgroundColor;
+    color: $fontColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    display: flex;
+    flex-direction: column;
+
+    &_h {
+        display: flex;
+        flex-direction: column;
+        font-size: 5rem;
+    }
+}
+
+.title-name {
+    font-family: $fontTitle;
+    font-size: 8rem;
+}
+
+.subtitle {
+    font-weight: 100;
 }
