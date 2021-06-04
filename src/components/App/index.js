@@ -1,23 +1,20 @@
+import React from 'react';
 import { Route, Link } from 'react-router-dom';
-
 import './style.scss';
 
-import Home from '../Home';
+// Import : Vues & Components
+import Home from '../../pages/Home';
+import Portfolio from '../../pages/Portfolio';
 import Nav from '../Nav';
-import Portfolio from '../Portfolio';
+import CustomCursor from '../Cursor';
 
 
 function App() {
   return (
     <div className="App">
-      <Link to="/" className="backhome">benjaminguelle.com</Link>
-      <div className="social">
-        <Link to="/" className="social-linkedin social-txt">Linkedin</Link>
-        <Link to="/" className="social-github social-txt">Github</Link>
-        <Link to="/" className="social-twitter social-txt">Twitter</Link>
-      </div>
-      <div className="copyright">2021 &copy; BG</div>
+      <CustomCursor />
       <Nav />
+      <span className="copyright">V1 / 2021&copy;</span>
       <Route exact path="/">
         <Home />
       </Route>

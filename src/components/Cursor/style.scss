@@ -1,0 +1,21 @@
+@import '../../styles/index.scss';
+
+// Cursor perso
+// --------------------------------
+.cursor {
+    width: 0.5em;
+    height: 0.5em;
+    background-color: $secondColor;
+    border-radius: 100%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    // mix-blend-mode: difference;
+    transition: all 150ms ease;
+    transition-property: opacity;
+}
+
+.cursor--hidden {
+  opacity: 0;
+}

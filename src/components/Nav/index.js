@@ -1,33 +1,17 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.scss';
-import moi from '../../assets/images/nav-picture.jpg'
 
 function Nav() {
     return (
-        <nav className="nav">
-            <ul className="scrollable">
-                <li className="scrollable-item">
-                    <Link to="#" className="scrollable-item-link">Contact</Link>
-                </li>
-                <li className="scrollable-item">
-                    <Link to="#" className="scrollable-item-link">Me connaître</Link>
-                </li>
-                <li className="scrollable-item">
-                    <Link to="#" className="scrollable-item-link">Compétences</Link>
-                </li>
-                <li className="scrollable-item">
-                    <Link to="#" className="scrollable-item-link">Portfolio</Link>
-                </li>
-                <li className="scrollable-item">
-                    <Link to="#" className="scrollable-item-link">Accueil</Link>
-                </li>
-                <div className="scrollable-selected" />
-            </ul>
-
-            <div className="nav-picture">
-                <img src={moi} alt="photo-de-benjamin" />
+        <header className="nav">
+            <Link to="/" className="navlink backhome">benjaminguelle.com</Link>
+            <div className="navlinks">
+                <Link to="/portfolio" className="navlink link-portfolio">portfolio</Link>
+                <Link to="/moi" className="navlink link-moi">me connaître</Link>
             </div>
-        </nav>
+            <Link to="/contact" className="nav-contact">contact</Link>
+        </header>
     )
 }
 
